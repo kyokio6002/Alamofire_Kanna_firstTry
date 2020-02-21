@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvt-AH-b1I">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="60k-dq-4eZ">
+            <objects>
+                <viewController id="gnL-MB-cmh" customClass="ViewController" customModule="Alamofire_Kanna_firstTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="36k-BQ-rgC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="比較したい選手のURLを入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzf-vf-nz3">
+                                <rect key="frame" x="43.5" y="212.5" width="327" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="選手データのURLを入力してください" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="P3j-Tg-u8l">
+                                <rect key="frame" x="50" y="358" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mrC-MI-ycJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="選手データのURLを入力してください" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="EzW-Ak-4NZ">
+                                <rect key="frame" x="50" y="428" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gOs-dC-gD5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="選手データのURLを入力してください" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="k0p-xO-MTI">
+                                <rect key="frame" x="50" y="498" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Wjr-ac-ats"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="選手データのURLを入力してください" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wr5-eJ-yFP">
+                                <rect key="frame" x="50" y="568" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3jA-sy-u5T"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="選手データのURLを入力してください" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hkO-lx-h0W">
+                                <rect key="frame" x="50" y="288" width="314" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TAK-Z1-bhh"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="join"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xW0-TU-7Xa">
+                                <rect key="frame" x="163.5" y="654" width="87" height="87"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="Otp-BB-T33"/>
+                                    <constraint firstAttribute="height" constant="87" id="Q9P-xa-VNk"/>
+                                </constraints>
+                                <state key="normal" title="比較">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="gnL-MB-cmh" eventType="touchUpInside" id="N94-kc-3H5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k0p-xO-MTI" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="3fg-gt-Lbo"/>
+                            <constraint firstItem="P3j-Tg-u8l" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="3p2-Lh-gue"/>
+                            <constraint firstItem="TAl-Ia-zot" firstAttribute="trailing" secondItem="P3j-Tg-u8l" secondAttribute="trailing" constant="50" id="3sA-ma-xtb"/>
+                            <constraint firstItem="wr5-eJ-yFP" firstAttribute="leading" secondItem="TAl-Ia-zot" secondAttribute="leading" constant="50" id="4pV-PE-pPC"/>
+                            <constraint firstItem="TAl-Ia-zot" firstAttribute="trailing" secondItem="hkO-lx-h0W" secondAttribute="trailing" constant="50" id="9a7-T7-Ywh"/>
+                            <constraint firstItem="hkO-lx-h0W" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="9rd-TX-GC0"/>
+                            <constraint firstItem="xW0-TU-7Xa" firstAttribute="top" secondItem="wr5-eJ-yFP" secondAttribute="bottom" constant="46" id="CIB-yN-628"/>
+                            <constraint firstItem="hkO-lx-h0W" firstAttribute="top" secondItem="vzf-vf-nz3" secondAttribute="bottom" constant="55" id="D7e-Yp-XSd"/>
+                            <constraint firstItem="EzW-Ak-4NZ" firstAttribute="centerY" secondItem="36k-BQ-rgC" secondAttribute="centerY" id="DMO-vV-gCy"/>
+                            <constraint firstItem="wr5-eJ-yFP" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="MCI-NP-TYO"/>
+                            <constraint firstItem="k0p-xO-MTI" firstAttribute="top" secondItem="EzW-Ak-4NZ" secondAttribute="bottom" constant="30" id="QSp-O6-3rQ"/>
+                            <constraint firstItem="wr5-eJ-yFP" firstAttribute="top" secondItem="k0p-xO-MTI" secondAttribute="bottom" constant="30" id="Qb1-GP-3Zz"/>
+                            <constraint firstItem="EzW-Ak-4NZ" firstAttribute="top" secondItem="P3j-Tg-u8l" secondAttribute="bottom" constant="30" id="UxB-PB-1bL"/>
+                            <constraint firstItem="TAl-Ia-zot" firstAttribute="trailing" secondItem="EzW-Ak-4NZ" secondAttribute="trailing" constant="50" id="cxv-eK-4Aj"/>
+                            <constraint firstItem="TAl-Ia-zot" firstAttribute="trailing" secondItem="wr5-eJ-yFP" secondAttribute="trailing" constant="50" id="e8X-Ry-f4V"/>
+                            <constraint firstItem="k0p-xO-MTI" firstAttribute="leading" secondItem="TAl-Ia-zot" secondAttribute="leading" constant="50" id="hDB-d5-1aJ"/>
+                            <constraint firstItem="xW0-TU-7Xa" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="lZ6-EA-tvo"/>
+                            <constraint firstItem="EzW-Ak-4NZ" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="nfH-s4-6t8"/>
+                            <constraint firstItem="vzf-vf-nz3" firstAttribute="centerX" secondItem="36k-BQ-rgC" secondAttribute="centerX" id="oED-x9-ELU"/>
+                            <constraint firstItem="P3j-Tg-u8l" firstAttribute="top" secondItem="hkO-lx-h0W" secondAttribute="bottom" constant="30" id="ohT-qR-lT5"/>
+                            <constraint firstItem="TAl-Ia-zot" firstAttribute="trailing" secondItem="k0p-xO-MTI" secondAttribute="trailing" constant="50" id="q50-g6-qRU"/>
+                            <constraint firstItem="EzW-Ak-4NZ" firstAttribute="leading" secondItem="TAl-Ia-zot" secondAttribute="leading" constant="50" id="sub-Wv-iLx"/>
+                            <constraint firstItem="hkO-lx-h0W" firstAttribute="leading" secondItem="TAl-Ia-zot" secondAttribute="leading" constant="50" id="wii-8a-4bP"/>
+                            <constraint firstItem="P3j-Tg-u8l" firstAttribute="leading" secondItem="TAl-Ia-zot" secondAttribute="leading" constant="50" id="wur-Vb-ipl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TAl-Ia-zot"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r2Q-BJ-LSK"/>
+                    <connections>
+                        <outlet property="textField1" destination="hkO-lx-h0W" id="x6q-5D-WCU"/>
+                        <outlet property="textField2" destination="P3j-Tg-u8l" id="DU8-RN-gpn"/>
+                        <outlet property="textField3" destination="EzW-Ak-4NZ" id="Rzb-zm-NY5"/>
+                        <outlet property="textField5" destination="wr5-eJ-yFP" id="73Z-XQ-m31"/>
+                        <outlet property="textFiled4" destination="k0p-xO-MTI" id="Tph-Ij-ENq"/>
+                        <segue destination="ovp-r1-yaZ" kind="show" identifier="goPlayers" id="LkU-aW-0eO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQ6-gF-60c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386.9565217391305" y="738.61607142857144"/>
+        </scene>
+        <!--Players View Controller-->
+        <scene sceneID="Dx1-cV-5zK">
+            <objects>
+                <viewController id="ovp-r1-yaZ" customClass="playersViewController" customModule="Alamofire_Kanna_firstTry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qfd-7w-0rk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ucO-ec-f0f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgG-Ob-YTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2307" y="739"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wa7-Gy-Ho7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gvt-AH-b1I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdG-hR-mpH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gnL-MB-cmh" kind="relationship" relationship="rootViewController" id="WgO-qF-QYJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZR-2G-NxO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476.81159420289856" y="738.61607142857144"/>
+        </scene>
+    </scenes>
+</document>
